@@ -1,148 +1,66 @@
-🦈 Shark Tank India Season 1 – Data Analysis & Visualization
-📌 Introduction
-This project explores detailed insights from Season 1 of Shark Tank India, a business reality TV show where entrepreneurs pitch their startups to a panel of investors ("sharks") in exchange for funding. The dataset contains 117 pitches and rich metadata about the asks, deals, equity, and investor participation.
-
-The analysis is conducted using Python, primarily with Pandas, NumPy, Matplotlib, and Seaborn in a Jupyter Notebook environment. The goal is to uncover patterns in investment behavior, episode-wise performance, and individual shark involvement.
-
-🧾 Dataset Description
-The dataset contains 28 columns and includes the following key information:
-
-Column Name	Description
-brand_name	Startup's name
-idea	Brief about the product/service
-pitcher_ask_amount	Amount asked by the startup (in lakhs)
-ask_equity	Equity % the startup is willing to give
-deal	1 if deal happened, 0 otherwise
-deal_amount	Final deal amount offered by sharks
-deal_equity	Final equity given by startup
-deal_valuation	Final valuation as per the deal
-amount_per_shark	Average amount invested per shark
-equity_per_shark	Average equity per shark
-total_sharks_invested	Count of sharks invested in that pitch
-ashneer_deal, anupam_deal, ...	1/0 if the respective shark invested
-ashneer_present, anupam_present, ...	1/0 if the shark was present in the episode
+🦈 Shark Tank India Season 1 - Data Analysis Project
+📌 Project Overview
+This project dives into the business deals made during Shark Tank India Season 1, providing insights on investments, valuations, and investor behavior. The dataset contains detailed records of 117 pitches made on the show. Using Python libraries such as pandas, numpy, matplotlib, and seaborn, this analysis showcases the decision patterns of sharks and business performance across episodes.
 
 🧰 Tools & Libraries Used
-Python – Core programming language
+Python
 
-Pandas – Data reading, wrangling, and analysis
+Pandas – Data manipulation and analysis
 
-NumPy – Numeric operations
+NumPy – Numerical operations
 
-Matplotlib & Seaborn – Visualizations and graphs
+Matplotlib & Seaborn – Data visualization
 
-Jupyter Notebook – Interactive development
+Jupyter Notebook – Code and exploration environment
 
-🧪 Data Preparation & Cleaning
-Imported and read the CSV file using pandas.read_csv()
+📊 Key Insights Extracted
+✅ Total Deals: 65 successful vs. 52 rejected pitches.
 
-Used .info() and .describe() to understand column types and statistical distributions
+📺 Most Deal-Heavy Episodes: Episodes 1, 15, 21, 33 had the highest number of deals (3 each).
 
-Checked for missing/null values using .isnull().sum()
+💰 Highest Deal Amount Episode: Episode 17 saw ₹280 lakhs invested.
 
-Cleaned and transformed data using .fillna() and grouping techniques
+🦈 Investor Insights:
 
-📊 Exploratory Data Analysis (EDA)
-✅ Deals Overview
-65 successful deals, 52 rejected pitches.
+Aman Gupta invested the most: ₹887.5 lakhs across 28 deals.
 
-Created pie charts to visualize the percentage distribution of deal outcomes.
+Ashneer Grover made 8 deals worth ₹494.33 lakhs.
 
-📺 Best Performing Episodes
-Top episodes with most deals: Episode 1, 15, 21, 33 (each had 3 deals).
+Analysis included individual deal equity % and amount per shark.
 
-Most expensive episodes: Episode 17 had ₹280 lakhs, Episode 13 had ₹255 lakhs in investments.
+🤝 Most Teamed-Up Pitch: Some startups received investments from 5 sharks.
 
-💰 Investor-Wise Analysis
-🧍 Ashneer Grover
-Deals: 8
+⚖️ No Bargain Deals: Startups that received exactly what they asked for (amount and equity).
 
-Invested: ₹494.33 lakhs
+📈 Visualizations: Pie charts, bar graphs, swarm plots, and histograms reveal trends in episode performance, investor collaboration, and deal structures.
 
-Equity Taken: 93.25%
+📂 Dataset Features
+brand_name, idea, deal, pitcher_ask_amount, deal_amount, deal_equity
 
-🧍 Anupam Mittal
-Deals: 24
+Shark participation: ashneer_present, anupam_deal, peyush_deal, etc.
 
-Invested: ₹533.83 lakhs
+Investment statistics: amount_per_shark, equity_per_shark, total_sharks_invested
 
-Equity Taken: 166.35%
+🔍 Exploratory Data Analysis (EDA)
+Performed comprehensive EDA including:
 
-🧍 Aman Gupta
-Deals: 28
+Null checks and data types
 
-Invested: ₹887.5 lakhs
+Statistical summaries (mean, median, mode)
 
-Equity Taken: 160.26%
+Grouped aggregations for investor-wise deal analysis
 
-🧍 Namita Thapar
-Deals: 22
+Visuals for deal distribution, shark teaming, and equity vs. amount trends
 
-Invested: ₹648.33 lakhs
+📈 Visual Samples
+Deal distribution pie chart
 
-Equity Taken: 134.78%
+Bar charts for episode-wise investments
 
-🧍 Vineeta Singh
-Deals: 15
+Shark-wise equity and investment summaries
 
-Invested: ₹328.33 lakhs
+Histogram of number of sharks teamed up
 
-Equity Taken: 131.53%
-
-🧍 Peyush Bansal
-Deals: 20
-
-Invested: ₹719.66 lakhs
-
-Equity Taken: 315.85%
-
-🧍 Ghazal Alagh
-Deals: 5
-
-Invested: ₹130.0 lakhs
-
-Equity Taken: 46.7%
-
-🤝 Investor Team-Ups
-Identified and visualized how many deals had 2, 3, 4, or even all 5 sharks investing together.
-
-Created bar plots and histograms to represent total sharks teamed up in each pitch.
-
-⚖️ No-Bargain Deals
-Found startups that got exactly what they asked for (same amount and equity).
-
-Example: BluePine Industries received ₹50L for 10% without any negotiation.
-
-📈 Visualizations
-Pie Charts: Deal vs. no deal percentage
-
-Bar Charts: Episode-wise total investment, shark-wise investment count
-
-Swarm Plots: Deal frequency across episodes
-
-Histograms: Number of sharks involved in each investment
-
-Grouped Aggregations: Mean, max, and sum values by episode and investor
-
-🔍 Interesting Observations
-Many successful deals had multiple sharks investing, which increased the deal valuation.
-
-Sharks like Aman, Peyush, and Anupam showed more investment interest than others.
-
-Some episodes had large investments but fewer deals, highlighting high-value startups.
-
-Most startups asked for between ₹40-80 lakhs and offered 5-15% equity.
-
-A few outliers asked for very low equity (0.25%) or had unusual valuations.
-
-✅ Conclusion
-This analysis highlights how data from a reality show like Shark Tank can provide rich insights into investor behavior, deal-making trends, and startup strategies. It serves as a strong example of:
-
-Practical data analysis
-
-Visual storytelling
-
-Business intelligence using Python
-
-Whether you're a fan of Shark Tank or a data science enthusiast, this project demonstrates how structured analysis can unlock real-world insights.
+📌 Conclusion
+This project provides a clear data-driven view of investment trends in Shark Tank India Season 1. It helps understand how different sharks make decisions and how startup valuations vary based on investor interest and negotiation.
 
