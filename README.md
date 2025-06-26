@@ -1,5 +1,7 @@
 🦈 Shark Tank India Season 1 - Data Analysis Project
+
 📌 Project Overview
+
 This project dives into the business deals made during Shark Tank India Season 1, providing insights on investments, valuations, and investor behavior. The dataset contains detailed records of 117 pitches made on the show. Using Python libraries such as pandas, numpy, matplotlib, and seaborn, this analysis showcases the decision patterns of sharks and business performance across episodes.
 
 🧰 Tools & Libraries Used
