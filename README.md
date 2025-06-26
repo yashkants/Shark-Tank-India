@@ -7,33 +7,39 @@ The analysis is conducted using Python, primarily with Pandas, NumPy, Matplotlib
 🧾 Dataset Description
 The dataset contains 28 columns and includes the following key information:
 
-Column Name	                                                Description
-brand_name	                                                Startup's name
-idea	                                                      Brief about the product/service
-pitcher_ask_amount	                                        Amount asked by the startup (in lakhs)
-ask_equity	                                                Equity % the startup is willing to give
-deal	1                                                     if deal happened, 0 otherwise
-deal_amount	                                                Final deal amount offered by sharks
-deal_equity	                                                Final equity given by startup
-deal_valuation	                                            Final valuation as per the deal
-amount_per_shark	                                          Average amount invested per shark
-equity_per_shark	                                          Average equity per shark
-total_sharks_invested	                                      Count of sharks invested in that pitch
-ashneer_deal, anupam_deal, ...	                            1/0 if the respective shark invested
-ashneer_present, anupam_present, ...	                      1/0 if the shark was present in the episode
+Column Name	Description
+brand_name	Startup's name
+idea	Brief about the product/service
+pitcher_ask_amount	Amount asked by the startup (in lakhs)
+ask_equity	Equity % the startup is willing to give
+deal	1 if deal happened, 0 otherwise
+deal_amount	Final deal amount offered by sharks
+deal_equity	Final equity given by startup
+deal_valuation	Final valuation as per the deal
+amount_per_shark	Average amount invested per shark
+equity_per_shark	Average equity per shark
+total_sharks_invested	Count of sharks invested in that pitch
+ashneer_deal, anupam_deal, ...	1/0 if the respective shark invested
+ashneer_present, anupam_present, ...	1/0 if the shark was present in the episode
 
 🧰 Tools & Libraries Used
-
 Python – Core programming language
+
 Pandas – Data reading, wrangling, and analysis
+
 NumPy – Numeric operations
+
 Matplotlib & Seaborn – Visualizations and graphs
+
 Jupyter Notebook – Interactive development
 
 🧪 Data Preparation & Cleaning
 Imported and read the CSV file using pandas.read_csv()
+
 Used .info() and .describe() to understand column types and statistical distributions
+
 Checked for missing/null values using .isnull().sum()
+
 Cleaned and transformed data using .fillna() and grouping techniques
 
 📊 Exploratory Data Analysis (EDA)
@@ -50,37 +56,51 @@ Most expensive episodes: Episode 17 had ₹280 lakhs, Episode 13 had ₹255 lakh
 💰 Investor-Wise Analysis
 🧍 Ashneer Grover
 Deals: 8
+
 Invested: ₹494.33 lakhs
+
 Equity Taken: 93.25%
 
 🧍 Anupam Mittal
 Deals: 24
+
 Invested: ₹533.83 lakhs
+
 Equity Taken: 166.35%
 
 🧍 Aman Gupta
 Deals: 28
+
 Invested: ₹887.5 lakhs
+
 Equity Taken: 160.26%
 
 🧍 Namita Thapar
 Deals: 22
+
 Invested: ₹648.33 lakhs
+
 Equity Taken: 134.78%
 
 🧍 Vineeta Singh
 Deals: 15
+
 Invested: ₹328.33 lakhs
+
 Equity Taken: 131.53%
 
 🧍 Peyush Bansal
 Deals: 20
+
 Invested: ₹719.66 lakhs
+
 Equity Taken: 315.85%
 
 🧍 Ghazal Alagh
 Deals: 5
+
 Invested: ₹130.0 lakhs
+
 Equity Taken: 46.7%
 
 🤝 Investor Team-Ups
